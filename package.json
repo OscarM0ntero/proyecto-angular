@@ -1,12 +1,14 @@
 {
-  "name": "listado-centros",
+  "name": "proyecto-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+	"deploy": "ng build --output-path=dist/my-app/browser --base-href=/proyecto-angular/ && npx angular-cli-ghpages --dir=dist/my-app/browser"
+
   },
   "private": true,
   "dependencies": {
